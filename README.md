@@ -11,3 +11,4 @@
 
 #####	Założenia :  	3 okna programu | Menu główne , okno impoer, okno export.
 			5 funkcji	| Stan magazynu aut, import, export, opis aut, sortowanie.
+[Okna.pdf](https://github.com/pawel-opalinski/projekt-obiektowe/files/10957296/Okna.pdf)
