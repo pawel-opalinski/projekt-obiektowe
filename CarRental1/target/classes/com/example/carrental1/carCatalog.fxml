@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollBar?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="625.0" prefWidth="798.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.carrental1.carCatalog">
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </center>
+   <top>
+      <AnchorPane prefHeight="131.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <ButtonBar layoutX="247.0" layoutY="26.0" prefHeight="89.0" prefWidth="329.0">
+              <buttons>
+                <Button mnemonicParsing="false" text="Wynajmij" />
+                  <Button mnemonicParsing="false" text="Odbiór" />
+                  <Button mnemonicParsing="false" text="Usuń" />
+                  <Button mnemonicParsing="false" text="Dodaj" />
+              </buttons>
+            </ButtonBar>
+         </children>
+      </AnchorPane>
+   </top>
+   <right>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </right>
+   <bottom>
+      <AnchorPane prefHeight="359.0" prefWidth="814.0" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane layoutX="3.0" layoutY="-266.0" prefHeight="625.0" prefWidth="200.0">
+               <children>
+                  <Label layoutX="14.0" layoutY="14.0" text="Filtry">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <CheckBox layoutX="15.0" layoutY="56.0" mnemonicParsing="false" text="Dostępność" />
+                  <CheckBox layoutX="16.0" layoutY="111.0" mnemonicParsing="false" text="Audi" />
+                  <ScrollBar layoutX="12.0" layoutY="365.0" />
+                  <Label layoutX="15.0" layoutY="337.0" text="Cena za dobę" />
+                  <Label layoutX="14.0" layoutY="85.0" text="Marka:" />
+                  <CheckBox layoutX="16.0" layoutY="135.0" mnemonicParsing="false" text="BMW" />
+                  <CheckBox layoutX="16.0" layoutY="160.0" mnemonicParsing="false" text="Fiat" />
+                  <CheckBox layoutX="16.0" layoutY="184.0" mnemonicParsing="false" text="Ford" />
+                  <Label layoutX="18.0" layoutY="215.0" text="Ilość miejsc: " />
+                  <CheckBox layoutX="15.0" layoutY="243.0" mnemonicParsing="false" text="2" />
+                  <CheckBox layoutX="14.0" layoutY="268.0" mnemonicParsing="false" text="5" />
+                  <CheckBox layoutX="14.0" layoutY="296.0" mnemonicParsing="false" text="7" />
+               </children>
+            </AnchorPane>
+            <ScrollPane layoutX="260.0" layoutY="-158.0" prefHeight="392.0" prefWidth="381.0">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <ButtonBar layoutX="14.0" layoutY="39.0" prefHeight="51.0" prefWidth="248.0">
+                          <buttons>
+                              <Label text="BMW X1" />
+                            <Button mnemonicParsing="false" text="Wybierz" />
+                          </buttons>
+                        </ButtonBar>
+                        <ButtonBar layoutX="14.0" layoutY="100.0" prefHeight="51.0" prefWidth="248.0">
+                           <buttons>
+                              <Label text="Audi A4" />
+                              <Button mnemonicParsing="false" text="Wybierz" />
+                           </buttons>
+                        </ButtonBar>
+                        <ButtonBar layoutX="14.0" layoutY="161.0" prefHeight="51.0" prefWidth="248.0">
+                           <buttons>
+                              <Label text="Mercedes w204" />
+                              <Button mnemonicParsing="false" text="Wybierz" />
+                           </buttons>
+                        </ButtonBar>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </ScrollPane>
+            <Button fx:id="logout" layoutX="674.0" layoutY="302.0" mnemonicParsing="false" onAction="#userLogOut" prefHeight="43.0" prefWidth="103.0" text="Wyloguj" />
+            <ButtonBar layoutX="24.0" layoutY="110.0" prefHeight="51.0" prefWidth="248.0" />
+         </children>
+      </AnchorPane>
+   </bottom>
+</BorderPane>
