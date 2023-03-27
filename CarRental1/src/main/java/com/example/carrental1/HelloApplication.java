@@ -37,6 +37,8 @@ public class HelloApplication extends Application {
         stg.setScene(scene2);
         stg.getScene().setRoot(pane);
     }
+
+
     public static void main(String[] args) {
         launch();
     }

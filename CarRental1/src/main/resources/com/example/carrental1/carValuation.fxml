@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.carrental1.carValuation">
+   <left>
+      <AnchorPane prefHeight="400.0" prefWidth="275.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="89.0" layoutY="47.0" text="Audi A4">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <DatePicker layoutX="51.0" layoutY="103.0" />
+            <DatePicker layoutX="51.0" layoutY="151.0" />
+            <Label layoutX="110.0" layoutY="79.0" text="Od:" />
+            <Label layoutX="106.0" layoutY="129.0" text="Do:" />
+            <MenuButton layoutX="66.0" layoutY="211.0" mnemonicParsing="false" text="MenuButton">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Action 1" />
+                <MenuItem mnemonicParsing="false" text="Action 2" />
+              </items>
+            </MenuButton>
+            <Label layoutX="63.0" layoutY="182.0" text="Wybór ubezpieczenia" />
+            <Button fx:id="cancel" layoutX="98.0" layoutY="330.0" mnemonicParsing="false" onAction="#backTo" text="Anuluj" />
+         </children>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="400.0" prefWidth="292.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="132.0" layoutY="247.0" text="Cena aktualna:" />
+            <Label layoutX="157.0" layoutY="288.0" text="0 zł " />
+            <Button layoutX="119.0" layoutY="333.0" mnemonicParsing="false" text="Podsumowanie" />
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>
