@@ -2,7 +2,7 @@
 
 #####	Programowanie obiektowe
 
-#####	Autorzy :	Jakub Pich 262019 | Paweł opaliński 262031
+#####	Autorzy :	Jakub Pich 262019 | Paweł Opaliński 262031
 
 #####	Temat : 	Wypożyczalnia samochodowa.
 
