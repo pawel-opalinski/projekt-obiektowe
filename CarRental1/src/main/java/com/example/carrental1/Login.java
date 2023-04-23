@@ -34,7 +34,6 @@ public class Login {
     public void checkLogin() throws IOException {
         HelloApplication next = new HelloApplication();
         if(username.getText().toString().equals("Admin") && password.getText().toString().equals("1234")) {
-            wrongLogin.setText("Sukces!");
 
             next.changeScene("carCatalog.fxml");
         }
@@ -44,7 +43,7 @@ public class Login {
         }
 
         else {
-            wrongLogin.setText("żłe hasło/login");
+            wrongLogin.setText("nieprawidłowe hasło/login");
         }
     }
 

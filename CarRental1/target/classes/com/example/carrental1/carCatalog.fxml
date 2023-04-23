@@ -68,7 +68,7 @@
                         <ButtonBar layoutX="14.0" layoutY="100.0" prefHeight="51.0" prefWidth="248.0">
                            <buttons>
                               <Label text="Audi A4" />
-                              <Button mnemonicParsing="false" text="Wybierz" />
+                              <Button fx:id="choose" mnemonicParsing="false" onAction="#buy" text="Wybierz" />
                            </buttons>
                         </ButtonBar>
                         <ButtonBar layoutX="14.0" layoutY="161.0" prefHeight="51.0" prefWidth="248.0">
