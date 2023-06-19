@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600" prefWidth="800" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.carrental1.carCatalog">
+   <left>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="logout" layoutX="14.0" layoutY="542.0" mnemonicParsing="false" onAction="#userLogOut" prefHeight="43.0" prefWidth="103.0" text="Wyloguj" />
+            <Button fx:id="Rent_button" layoutX="720.0" layoutY="551.0" mnemonicParsing="false" onAction="#RentCar" text="Wynajmij" />
+            <Button fx:id="Edit_button" layoutX="654.0" layoutY="551.0" mnemonicParsing="false" onAction="#EditCar" text="Edycja" />
+            <Button fx:id="Add_button" layoutX="586.0" layoutY="551.0" mnemonicParsing="false" onAction="#AddCar" text="Dodaj" />
+            <ListView fx:id="carListView" layoutX="419.0" layoutY="16.0" prefHeight="376.0" prefWidth="366.0" />
+            <CheckBox fx:id="check_marka1" layoutX="12.0" layoutY="76.0" mnemonicParsing="false" onAction="#filterCars" text="BMW" />
+            <CheckBox fx:id="check_miejsca4" layoutX="129.0" layoutY="264.0" mnemonicParsing="false" onAction="#filterCars" text="7" />
+            <CheckBox fx:id="check_miejsca3" layoutX="90.0" layoutY="264.0" mnemonicParsing="false" onAction="#filterCars" text="6" />
+            <CheckBox fx:id="check_miejsca2" layoutX="52.0" layoutY="264.0" mnemonicParsing="false" onAction="#filterCars" text="5" />
+            <CheckBox fx:id="check_miejsca1" layoutX="14.0" layoutY="264.0" mnemonicParsing="false" onAction="#filterCars" text="4" />
+            <TextField fx:id="text_ubez_low" layoutX="12.0" layoutY="399.0" onAction="#filterCars" promptText="Min" />
+            <TextField fx:id="text_ubez_high" layoutX="178.0" layoutY="399.0" onAction="#filterCars" promptText="Max" />
+            <TextField fx:id="text_cena_low" layoutX="15.0" layoutY="334.0" onAction="#filterCars" promptText="Min" />
+            <TextField fx:id="text_cena_high" layoutX="181.0" layoutY="334.0" onAction="#filterCars" promptText="Max" />
+            <Label layoutX="14.0" layoutY="370.0" text="Cena ubezpieczenia za dobę:">
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+            <Label layoutX="11.0" layoutY="300.0" text="Cena wypożyczenia na dobę:">
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+            <Label layoutX="13.0" layoutY="230.0" text="Ilość miejsc">
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+            <Label layoutX="12.0" layoutY="143.0" text="Rodzaj paliwa:">
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+            <Label layoutX="14.0" layoutY="14.0" text="Filtry:">
+               <font>
+                  <Font size="24.0" />
+               </font></Label>
+            <Label layoutX="15.0" layoutY="49.0" text="Marka">
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+            <CheckBox fx:id="check_paliwo1" layoutX="13.0" layoutY="170.0" mnemonicParsing="false" onAction="#filterCars" text="Diesel" />
+            <CheckBox fx:id="check_paliwo2" layoutX="103.0" layoutY="170.0" mnemonicParsing="false" onAction="#filterCars" text="Benzyna" />
+            <CheckBox fx:id="check_paliwo3" layoutX="15.0" layoutY="204.0" mnemonicParsing="false" onAction="#filterCars" text="LPG" />
+            <CheckBox fx:id="check_paliwo4" layoutX="105.0" layoutY="204.0" mnemonicParsing="false" onAction="#filterCars" text="Elektryczny" />
+            <CheckBox fx:id="check_marka2" layoutX="104.0" layoutY="76.0" mnemonicParsing="false" onAction="#filterCars" text="VW" />
+            <CheckBox fx:id="check_marka3" layoutX="195.0" layoutY="76.0" mnemonicParsing="false" onAction="#filterCars" text="Audi" />
+            <CheckBox fx:id="check_marka4" layoutX="12.0" layoutY="115.0" mnemonicParsing="false" onAction="#filterCars" text="Mercedes" />
+            <CheckBox fx:id="check_marka5" layoutX="103.0" layoutY="115.0" mnemonicParsing="false" onAction="#filterCars" text="Porshe" />
+            <CheckBox fx:id="check_marka6" layoutX="195.0" layoutY="115.0" mnemonicParsing="false" onAction="#filterCars" text="Ford" />
+            <Button fx:id="Filtruj" layoutX="575.0" layoutY="412.0" mnemonicParsing="false" onAction="#handleCheckboxAction" text="Pełna lista" />
+         </children></AnchorPane>
+   </left>
+</BorderPane>

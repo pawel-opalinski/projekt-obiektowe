@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600" prefWidth="800" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.carrental1.Add_window">
+   <children>
+      <Button fx:id="Add_button" layoutX="738.0" layoutY="560.0" mnemonicParsing="false" onAction="#Add" text="Dodaj" textAlignment="CENTER" />
+      <Label layoutX="113.0" layoutY="58.0" text="Numer rejestracyjny">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label layoutX="113.0" layoutY="94.0" text="Marka">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label layoutX="113.0" layoutY="134.0" text="Model">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label layoutX="113.0" layoutY="170.0" text="Rodzaj paliwa">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label layoutX="113.0" layoutY="204.0" text="Ilość miejsc">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label layoutX="113.0" layoutY="244.0" text="Cena wynajecia 24H">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label layoutX="113.0" layoutY="284.0" text="Ubezpieczenie na 24H">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Button fx:id="Back_button" layoutX="14.0" layoutY="560.0" mnemonicParsing="false" onAction="#Back" text="Powrót" />
+      <TextField fx:id="text_Tablice" layoutX="400.0" layoutY="59.0" promptText="AB12345" />
+      <TextField fx:id="text_Marka" layoutX="400.0" layoutY="95.0" promptText="BMW" />
+      <TextField fx:id="text_Model" layoutX="400.0" layoutY="135.0" promptText="X1" />
+      <TextField fx:id="text_Paliwo" layoutX="400.0" layoutY="171.0" promptText="Diesel" />
+      <TextField fx:id="text_Miejsca" layoutX="400.0" layoutY="205.0" promptText="5" />
+      <TextField fx:id="text_Cena24h" layoutX="400.0" layoutY="245.0" promptText="120" />
+      <TextField fx:id="text_Ubezpieczenie24h" layoutX="400.0" layoutY="287.0" promptText="30" />
+   </children>
+</AnchorPane>
